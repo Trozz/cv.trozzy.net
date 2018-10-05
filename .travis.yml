@@ -5,15 +5,16 @@ addons:
   apt:
     packages:
       - python-pygments
+      - nodejs
+      - npm
+      - snapd
 
 install:
-    - wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb
-    - sudo dpkg -i hugo*.deb
-    - apt-get install -y nodejs npm
+    - sudo snap install hugo
     - rm -rf public || exit 0
 
 script:
-    - hugo
+    - /snap/bin/hugo
     - npm install
     - node ./generatepdf.js
 
