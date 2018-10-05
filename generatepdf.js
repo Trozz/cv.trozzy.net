@@ -1,6 +1,6 @@
 var fs = require('fs');
 var pdf = require('html-pdf');
-var html = fs.readFileSync('./docs/index.html', 'utf8');
+var html = fs.readFileSync('./public/index.html', 'utf8');
 var options = {
   "format": 'A4',
   "border": {
