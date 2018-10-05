@@ -2,7 +2,7 @@ baseurl = "https://cv.trozzy.net"
 title = "Resume"
 theme = "winning"
 #themesdir = ""
-publishDir = "docs"
+publishDir = "public"
 
 
 disableKinds = ["RSS"]
