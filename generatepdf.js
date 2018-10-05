@@ -11,7 +11,7 @@ var options = {
   }
  };
 
-pdf.create(html, options).toFile('./docs/cv.pdf', function(err, res) {
+pdf.create(html, options).toFile('./public/cv.pdf', function(err, res) {
   if (err) return console.log(err);
   console.log(res);
 });
