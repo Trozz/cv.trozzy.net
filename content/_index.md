@@ -54,14 +54,17 @@ Provide support to internal and external customers, supporting a variety of solu
 {{% column -span-cols-4 -p-left-3 %}}
 #### Technologies
   * AWS
+  * OpenStack
   * Linux
+  * Windows
   * Python
-  * Ansible
   * Node.js
+  * Ansible
 
 #### Interested in
-  * Internet
+  * DNS
   * Cloud
+  * Architecture
   * Automation
 
 #### Links
