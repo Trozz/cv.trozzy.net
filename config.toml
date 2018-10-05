@@ -1,0 +1,16 @@
+baseurl = "https://cv.trozzy.net"
+title = "Resume"
+theme = "winning"
+#themesdir = ""
+publishDir = "docs"
+
+
+disableKinds = ["RSS"]
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+languageCode = "en-us"
+[taxonomies]
+
+[author]
+    name = "Michael Leer"
+    email = "contact@trozzy.net"
