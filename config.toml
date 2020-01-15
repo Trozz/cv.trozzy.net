@@ -84,7 +84,12 @@ googleAnalytics = "UA-39926379-1"
         [[params.certification.list]]
         course = "Amazon Certified Solutions Architect"
         level = "Associate"
-        expiry = "March 22, 2020"
+        issued = "October 2019"
+
+        [[params.certification.list]]
+        course = "RedHat Certified Administrator"
+        level = ""
+        issued = "March 2013"
 
     [params.education]
         enable = false
