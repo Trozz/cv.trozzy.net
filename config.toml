@@ -11,7 +11,7 @@ googleAnalytics = "UA-39926379-1"
     author = "Michael Leer-Hipple"
     description = "Experienced DevOps & Reliability Engineer"
 
-    primaryColor = "#003366"
+    primaryColor = "#0E7F9C"
     textPrimaryColor = "#292929"
 
     [params.profile]
