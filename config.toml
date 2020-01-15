@@ -1,16 +1,257 @@
-baseurl = "https://cv.trozzy.net"
+# Page settings
+
+baseURL = "https://cv.trozzy.net/"
+languageCode = "en"
 title = "Resume"
-theme = "winning"
-#themesdir = ""
-publishDir = "public"
+theme = "hugo-devresume-theme"
+googleAnalytics = "UA-39926379-1"
+
+[params]
+
+    author = "Michael Leer-Hipple"
+    description = "Experienced DevOps & Reliability Engineer"
+
+    primaryColor = "#003366"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Michael Leer-Hipple"
+        tagline = "Experienced DevOps & Reliability Engineer"
+        avatar = "me.png"
+
+    [params.contact]
+        enable = true
+        location = "Harlow, Essex"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:07714620633"
+        text = "077 1462 0633"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:contact@trozzy.net"
+        text = "contact@trozzy.net"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://www.trozzy.net"
+        text = "www.trozzy.net"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Cloud"
+        [[params.skills.list.items]]
+        details = "Amazon Web Services"
+        [[params.skills.list.items]]
+        details = "Microsoft Azure"
+        [[params.skills.list.items]]
+        details = "Google Cloud Platform"
+        [[params.skills.list.items]]
+        details = "OpenStack"
+
+        [[params.skills.list]]
+        title = "Programming"
+        [[params.skills.list.items]]
+        details = "Python"
+        [[params.skills.list.items]]
+        details = "NodeJS"
+
+        [[params.skills.list]]
+        title = "Automation"
+        [[params.skills.list.items]]
+        details = "Ansible"
+        [[params.skills.list.items]]
+        details = "SaltStack"
+        [[params.skills.list.items]]
+        details = "Terraform"
+
+        [[params.skills.list]]
+        title = "Containerisation"
+        [[params.skills.list.items]]
+        details = "Kubernetes"
+        [[params.skills.list.items]]
+        details = "Rancher"
+        [[params.skills.list.items]]
+        details = "Docker"
+        [[params.skills.list.items]]
+        details = "Podman"
+
+    [params.certification]
+        enable = true
+
+        [[params.certification.list]]
+        course = "Amazon Certified Solutions Architect"
+        level = "Associate"
+        expiry = "March 22, 2020"
+
+    [params.education]
+        enable = false
+
+        [[params.education.list]]
+        degree = ""
+        university = ""
+        dates = ""
+
+    [params.awards]
+        enable = false
+
+        [[params.awards.list]]
+        name = ""
+        body = ""
+        date = ""
+
+    [params.languages]
+        enable = false
+
+        [[params.languages.list]]
+        name = ""
+        level = ""
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Computer Gaming"
+        [[params.interests.list]]
+        name = "Innovative Technology"
+        [[params.interests.list]]
+        name = "Linux"
+        [[params.interests.list]]
+        name = "Cloud"
+        [[params.interests.list]]
+        name = "DNS"
+        [[params.interests.list]]
+        name = "Automation"
+
+    [params.summary]
+        enable = true
+        text = "An engineer specialising in Linux systems, with a decade of experience designing and operating applications for businesses large and small, applying them within modern working practices such as Agile, DevOps, Reliability and Chaos Engineering, to create robust, scalable systems that are a pleasure to use and maintain."
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "DevOps Engineer"
+        dates = "November 2019 - May 2020"
+        company = "WorldPay"
+        url = "https://www.worldpay.com"
+        details = "Engagement to work with their data teams to build a data lake, focusing on the infrastructure and security that is required to provide secure role-based access to potentially Personally identifiable information"
+        [[params.experience.list.items]]
+        details = "Upgrade of existing terraform to latest version and syntax"
+        [[params.experience.list.items]]
+        details = "S3, IAM and KMS policies to ensure data is encrypted and limited access is provided"
+        [[params.experience.list.items]]
+        details = "Creation of Kubernetes clusters with role-based access to resources"
+
+        [[params.experience.list]]
+        title = "Site Reliability Engineer"
+        dates = "January 2019 - November 2019"
+        company = "Mention Me"
+        url = "https://www.mention-me.com"
+        details = "Sole Site Reliability Engineer focused on technical debt and increasing engineering velocity."
+        [[params.experience.list.items]]
+        details = "Migration of existing cloud-based infrastructure to a more secure architecture."
+        [[params.experience.list.items]]
+        details = "ElasticSearch upgrade from legacy EOL version to latest stable release with minimal downtime."
+        [[params.experience.list.items]]
+        details = "Design a Kubernetes based deployment pipeline to increase development velocity."
+
+        [[params.experience.list]]
+        title = "Head of DevOps"
+        dates = "2014 - 2016"
+        company = "CallSign"
+        url = "https://www.callsign.com"
+        details = "Foundation of a DevOps organisation operating within an embedded model, driving continuous integration and delivery utilising tools such as GitLab and Kubernetes."
+        [[params.experience.list.items]]
+        details = "Management of all DevOps engineers"
+        [[params.experience.list.items]]
+        details = "Engagement strategy for embedding engineers into other development teams"
 
 
-disableKinds = ["RSS"]
-defaultContentLanguage = "en"
-enableRobotsTXT = true
-languageCode = "en-us"
-[taxonomies]
+        [[params.experience.list]]
+        title = "Senior Software Engineer (SE3) | Site Reliability Engineer"
+        dates = "April 2018 - November 2018"
+        company = "Ocado Technology"
+        url = "https://www.ocadotechnology.com/"
+        details = "Foundation of an international engineering team focusing on implementing reliability and chaos principles, supporting engineering teams developing over 200 microservices through objective led engagements and embedding of engineering resources across multiple teams."
+        [[params.experience.list.items]]
+        details = "Laid the foundation for a geographically disperse engineering function"
 
-[author]
-    name = "Michael Leer"
-    email = "contact@trozzy.net"
+        [[params.experience.list]]
+        title = "Principle Engineer | Site Reliability Engineer"
+        dates = "April 2016 - April 2018"
+        company = "Crownpeak"
+        url = "https://www.crownpeak.com"
+        details = "Implementing DevOps and SRE principles throughout the global organisation, re-architecture of their Software as a Service platforms to ensure high levels of security and scalability for future growth, development of internal tooling to increase the development velocity and abstraction of the Crownpeak cloud platforms, leadership of a global engineering team delivering against key indicators to drive revenue growth."
+        [[params.experience.list.items]]
+        details = "Cloud Architecture"
+        [[params.experience.list.items]]
+        details = "Creation of internal and external solutions to exceed internal and external customer expectations"
+        [[params.experience.list.items]]
+        details = "Practice area / Team leadership"
+        [[params.experience.list.items]]
+        details = "Design and Implementation of IaaS, Containerisation and Configuration Management"
+
+
+        [[params.experience.list]]
+        title = "Senior Linux Engineer | DevOps Engineer"
+        dates = "July 2012 - April 2016"
+        company = "Rackspace"
+        url = "https://www.rackspace.com"
+        details = "Provide support to internal and external customers, supporting a variety of solutions including but not limited to, LAMP, LNMP and Cloud Computing."
+        [[params.experience.list.items]]
+        details = "Cloud Architecture"
+        [[params.experience.list.items]]
+        details = "Provide training to junior engineers"
+        [[params.experience.list.items]]
+        details = "Develop automation for Rackers to use on customer servers"
+        [[params.experience.list.items]]
+        details = "Develop internal tooling to facilitate internal requirements"
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "aws-ssh-config"
+        url = "https://github.com/Trozz/aws-ssh-config"
+        meta = "Open Source"
+        tagline = "Tool that uses AWS EC2 API to generate an SSH config."
+
+        [[params.projects.list]]
+        title = "ansible-nebula"
+        url = "https://github.com/Trozz/ansible-nebula"
+        meta = "Open Source"
+        tagline = "Ansible role to deploy Nebula a scalable overlay networking solution."
+
+    [params.information]
+        enable = false
+
+        [[params.information.list]]
+        title = ""
+        [[params.information.list.items]]
+        details = ""
+
+        [[params.information.list]]
+        title = ""
+        details = ""
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "https://github.com/trozz"
+        title = "trozz"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "https://linkedin.com/in/trozz"
+        title = "trozz"
+        [[params.social.list]]
+        icon = "fab fa-twitter-square"
+        url = "https://twitter.com/trozz"
+        title = "@trozz"
+
+    [params.footer]
+        copyright = ""
