@@ -22,9 +22,23 @@ jobs:
     - name: Build
       run: hugo --minify
 
+    - name: html to pdf
+      uses: fifsky/html-to-pdf-action@master
+      with:
+        htmlFile: ./public/index.html
+        outputFile: ./public/resume.pdf
+        pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./public
+
+    - name: Purge cache
+      uses: jakejarvis/cloudflare-purge-action@master
+      env:
+        CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+        CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+        PURGE_URLS: '["https://cv.trozzy.net/index.html"]'
