@@ -257,6 +257,10 @@ googleAnalytics = "UA-39926379-1"
         icon = "fab fa-twitter-square"
         url = "https://twitter.com/trozz"
         title = "@trozz"
+        [[params.social.list]]
+        icon = "fas file-pdf"
+        url = "https://cv.trozzy.net/resume.pdf"
+        title = "PDF Copy"
 
     [params.footer]
         copyright = ""
