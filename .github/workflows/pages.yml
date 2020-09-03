@@ -6,38 +6,31 @@ on:
     - master
 
 jobs:
-  init:
+  build:
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v1
+    - name: 00 - checkout
+      uses: actions/checkout@v1
       with:
         submodules: true
 
-    - name: Setup Hugo
+    - name: 01 - Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: '0.61.0'
         # extended: true
 
-  build:
-    needs: init
-    runs-on: ubuntu-18.04
-    steps:
-    - name: Build
+    - name: 02 - Build
       run: hugo --minify
 
-    - name: html to pdf
+    - name: 03 - html to pdf
       uses: fifsky/html-to-pdf-action@master
       with:
         htmlFile: ./public/index.html
         outputFile: ./public/resume.pdf
         pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-18.04
-    steps:
-    - name: Deploy
+    - name: 04 - Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
@@ -45,7 +38,7 @@ jobs:
         PUBLISH_DIR: ./public
 
   clear-cache:
-    needs: deploy
+    needs: build
     runs-on: ubuntu-18.04
     steps:
     - name: Purge cache
