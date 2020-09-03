@@ -139,7 +139,7 @@ googleAnalytics = "UA-39926379-1"
 
         [[params.experience.list]]
         title = "DevOps Engineer"
-        dates = "November 2019 - May 2020"
+        dates = "November 2019 - September 2020"
         company = "WorldPay"
         url = "https://www.worldpay.com"
         details = "Engagement to work with their data teams to build a data lake, focusing on the infrastructure and security that is required to provide secure role-based access to potentially Personally identifiable information"
@@ -149,6 +149,8 @@ googleAnalytics = "UA-39926379-1"
         details = "S3, IAM and KMS policies to ensure data is encrypted and limited access is provided"
         [[params.experience.list.items]]
         details = "Creation of Kubernetes clusters with role-based access to resources"
+        [[params.experience.list.items]]
+        details = "Deployment of an automated system to provide GitOps capabilities to Kubernetes"
 
         [[params.experience.list]]
         title = "Site Reliability Engineer"
