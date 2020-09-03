@@ -6,7 +6,7 @@ on:
     - master
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
@@ -29,6 +29,9 @@ jobs:
         outputFile: ./public/resume.pdf
         pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
 
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
@@ -36,6 +39,9 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./public
 
+  clear-cache:
+    runs-on: ubuntu-18.04
+    steps:
     - name: Purge cache
       uses: jakejarvis/cloudflare-purge-action@master
       env:
