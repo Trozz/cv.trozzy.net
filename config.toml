@@ -165,7 +165,7 @@ googleAnalytics = "UA-39926379-1"
 
         [[params.experience.list]]
         title = "Head of DevOps"
-        dates = "2014 - 2016"
+        dates = "November 2018 - January 2019"
         company = "CallSign"
         url = "https://www.callsign.com"
         details = "Foundation of a DevOps organisation operating within an embedded model, driving continuous integration and delivery utilising tools such as GitLab and Kubernetes."
