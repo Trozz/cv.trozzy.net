@@ -6,7 +6,7 @@ on:
     - master
 
 jobs:
-  build:
+  init:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v1
@@ -19,6 +19,10 @@ jobs:
         hugo-version: '0.61.0'
         # extended: true
 
+  build:
+    needs: init
+    runs-on: ubuntu-18.04
+    steps:
     - name: Build
       run: hugo --minify
 
@@ -30,6 +34,7 @@ jobs:
         pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
 
   deploy:
+    needs: build
     runs-on: ubuntu-18.04
     steps:
     - name: Deploy
@@ -40,6 +45,7 @@ jobs:
         PUBLISH_DIR: ./public
 
   clear-cache:
+    needs: deploy
     runs-on: ubuntu-18.04
     steps:
     - name: Purge cache
