@@ -45,10 +45,6 @@ googleAnalytics = "UA-39926379-1"
         [[params.skills.list.items]]
         details = "Amazon Web Services"
         [[params.skills.list.items]]
-        details = "Microsoft Azure"
-        [[params.skills.list.items]]
-        details = "Google Cloud Platform"
-        [[params.skills.list.items]]
         details = "OpenStack"
 
         [[params.skills.list]]
@@ -75,8 +71,6 @@ googleAnalytics = "UA-39926379-1"
         details = "Rancher"
         [[params.skills.list.items]]
         details = "Docker"
-        [[params.skills.list.items]]
-        details = "Podman"
 
     [params.certification]
         enable = true
@@ -136,6 +130,27 @@ googleAnalytics = "UA-39926379-1"
 
     [params.experience]
         enable = true
+
+        [[params.experience.list]]
+        title = "Lead DevOps Engineer"
+        dates = "September 2020 - Present"
+        company = "Vive (GH Bank)"
+        url = "https://www.vive.co.uk"
+        details = "Lead Engineer specialising in cloud based technologies, focused on architecting a secure cloud first environment, building a DevOps and a DevSecOps team, "
+        [[params.experience.list.items]]
+        details = "Design and implementation of secure cloud native architecture"
+        [[params.experience.list.items]]
+        details = "Development of internal security tooling"
+        [[params.experience.list.items]]
+        details = "Implementation of automated systems providing GitOps capabilities for Kubernetes and AWS"
+        [[params.experience.list.items]]
+        details = "Management of DevOps and DevSecOps teams"
+        [[params.experience.list.items]]
+        details = "Cost Optimisation"
+        [[params.experience.list.items]]
+        details = "Architecting Spring based microservices"
+        [[params.experience.list.items]]
+        details = "Development of custom resources for kubernetes"
 
         [[params.experience.list]]
         title = "DevOps Engineer"
