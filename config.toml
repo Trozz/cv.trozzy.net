@@ -37,6 +37,24 @@ googleAnalytics = "UA-39926379-1"
         url = "https://www.trozzy.net"
         text = "www.trozzy.net"
 
+    [params.summary]
+        enable = true
+        text = "An engineer specialising in Linux systems, with a decade of experience designing and operating applications for businesses large and small, applying them within modern working practices such as Agile, DevOps, Reliability and Chaos Engineering, to create robust, scalable systems that are a pleasure to use and maintain."
+
+
+    [params.certification]
+        enable = true
+
+        [[params.certification.list]]
+        course = "Amazon Certified Solutions Architect"
+        level = "Associate"
+        issued = "October 2019"
+
+        [[params.certification.list]]
+        course = "RedHat Certified Administrator"
+        level = ""
+        issued = "March 2013"
+
     [params.skills]
         enable = true
 
@@ -72,41 +90,14 @@ googleAnalytics = "UA-39926379-1"
         [[params.skills.list.items]]
         details = "Docker"
 
-    [params.certification]
-        enable = true
-
-        [[params.certification.list]]
-        course = "Amazon Certified Solutions Architect"
-        level = "Associate"
-        issued = "October 2019"
-
-        [[params.certification.list]]
-        course = "RedHat Certified Administrator"
-        level = ""
-        issued = "March 2013"
-
-    [params.education]
-        enable = false
-
-        [[params.education.list]]
-        degree = ""
-        university = ""
-        dates = ""
-
-    [params.awards]
-        enable = false
-
-        [[params.awards.list]]
-        name = ""
-        body = ""
-        date = ""
-
-    [params.languages]
-        enable = false
-
-        [[params.languages.list]]
-        name = ""
-        level = ""
+        [[params.skills.list]]
+        title = "Operating Systems"
+        [[params.skills.list.items]]
+        details = "Linux"
+        [[params.skills.list.items]]
+        details = "Windows Server"
+        [[params.skills.list.items]]
+        details = "BSD"
 
     [params.interests]
         enable = true
@@ -118,15 +109,23 @@ googleAnalytics = "UA-39926379-1"
         [[params.interests.list]]
         name = "Linux"
         [[params.interests.list]]
-        name = "Cloud"
+        name = "Cloud based technologies"
         [[params.interests.list]]
         name = "DNS"
         [[params.interests.list]]
-        name = "Automation"
+        name = "Home Automation"
+        [[params.interests.list]]
+        name = "Blockchain applications"
 
-    [params.summary]
-        enable = true
-        text = "An engineer specialising in Linux systems, with a decade of experience designing and operating applications for businesses large and small, applying them within modern working practices such as Agile, DevOps, Reliability and Chaos Engineering, to create robust, scalable systems that are a pleasure to use and maintain."
+    [params.education]
+        enable = false
+
+    [params.awards]
+        enable = false
+
+    [params.languages]
+        enable = false
+
 
     [params.experience]
         enable = true
@@ -151,6 +150,8 @@ googleAnalytics = "UA-39926379-1"
         details = "Architecting Spring based microservices"
         [[params.experience.list.items]]
         details = "Development of custom resources for kubernetes"
+        [[params.experience.list.items]]
+        details = "Design of a Proxy based solution allowing controlled egress from AWS"
 
         [[params.experience.list]]
         title = "DevOps Engineer"
@@ -161,11 +162,13 @@ googleAnalytics = "UA-39926379-1"
         [[params.experience.list.items]]
         details = "Upgrade of existing terraform to latest version and syntax"
         [[params.experience.list.items]]
-        details = "S3, IAM and KMS policies to ensure data is encrypted and limited access is provided"
+        details = "Design and develop secure cloud policies, conforming principals of least priviledge "
         [[params.experience.list.items]]
         details = "Creation of Kubernetes clusters with role-based access to resources"
         [[params.experience.list.items]]
-        details = "Deployment of an automated system to provide GitOps capabilities to Kubernetes"
+        details = "Development of GitOps based deployments"
+        [[params.experience.list.items]]
+        details = "Design of a Proxy based solution allowing controlled egress from AWS"
 
         [[params.experience.list]]
         title = "Site Reliability Engineer"
@@ -191,7 +194,6 @@ googleAnalytics = "UA-39926379-1"
         [[params.experience.list.items]]
         details = "Engagement strategy for embedding engineers into other development teams"
 
-
         [[params.experience.list]]
         title = "Senior Software Engineer (SE3) | Site Reliability Engineer"
         dates = "April 2018 - November 2018"
@@ -200,6 +202,8 @@ googleAnalytics = "UA-39926379-1"
         details = "Foundation of an international engineering team focusing on implementing reliability and chaos principles, supporting engineering teams developing over 200 microservices through objective led engagements and embedding of engineering resources across multiple teams."
         [[params.experience.list.items]]
         details = "Laid the foundation for a geographically disperse engineering function"
+        [[params.experience.list.items]]
+        details = "Creation of Product maturity program to ensure that product entering production are secure and resiliant"
 
         [[params.experience.list]]
         title = "Principle Engineer | Site Reliability Engineer"
@@ -210,12 +214,15 @@ googleAnalytics = "UA-39926379-1"
         [[params.experience.list.items]]
         details = "Cloud Architecture"
         [[params.experience.list.items]]
-        details = "Creation of internal and external solutions to exceed internal and external customer expectations"
+        details = "Creation of internal and external solutions to exceed customer expectations"
         [[params.experience.list.items]]
         details = "Practice area / Team leadership"
         [[params.experience.list.items]]
         details = "Design and Implementation of IaaS, Containerisation and Configuration Management"
-
+        [[params.experience.list.items]]
+        details = "Development of GitOps based deployment systems"
+        [[params.experience.list.items]]
+        details = "Design and Development of ChatOps systems"
 
         [[params.experience.list]]
         title = "Senior Linux Engineer | DevOps Engineer"
@@ -226,11 +233,13 @@ googleAnalytics = "UA-39926379-1"
         [[params.experience.list.items]]
         details = "Cloud Architecture"
         [[params.experience.list.items]]
-        details = "Provide training to junior engineers"
+        details = "Mentorship of junior engineers"
         [[params.experience.list.items]]
         details = "Develop automation for Rackers to use on customer servers"
         [[params.experience.list.items]]
         details = "Develop internal tooling to facilitate internal requirements"
+        [[params.experience.list.items]]
+        details = "Development of automated systems to reduce toil"
 
     [params.projects]
         enable = true
