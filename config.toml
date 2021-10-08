@@ -136,6 +136,11 @@ googleAnalytics = "UA-39926379-1"
         company = "Fnality International"
         url = "https://www.fnality.org"
         details = "Building a blockchain technology platform to allow peer to peer digital cash asset to settle tokenised transations."
+        [[params.experience.list.items]]
+        details = "Security Auditing"
+        [[params.experience.list.items]]
+        details = "Management of Kubernetes clusters"
+        
 
         [[params.experience.list]]
         title = "Lead DevOps Engineer"
