@@ -129,10 +129,17 @@ googleAnalytics = "UA-39926379-1"
 
     [params.experience]
         enable = true
+        
+        [[params.experience.list]]
+        title = "Staff Platform Engineer"
+        dates = "July 2021 - Present"
+        company = "Fnality International"
+        url = "https://www.fnality.org"
+        details = "Building a blockchain technology platform to allow peer to peer digital cash asset to settle tokenised transations."
 
         [[params.experience.list]]
         title = "Lead DevOps Engineer"
-        dates = "September 2020 - Present"
+        dates = "September 2020 - July 2021"
         company = "Vive (GH Bank)"
         url = "https://www.vive.co.uk"
         details = "Lead Engineer specialising in cloud based technologies, focused on architecting a secure cloud first environment, building a DevOps and a DevSecOps team, "
