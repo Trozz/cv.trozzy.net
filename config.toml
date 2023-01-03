@@ -129,10 +129,23 @@ googleAnalytics = "UA-39926379-1"
 
     [params.experience]
         enable = true
-        
+
+        [[params.experience.list]]
+        title = "Senior DevOps Engineer"
+        dates = "July 2022 - Present"
+        company = "Kennek"
+        url = "https://www.kennek.io"
+        details = "Kennek provides SaaS solutions to enable lenders, investors and other alternative lending actors to scale operations, enhance risk management and identify new funding sources without the traditional burdens"
+        [[params.experience.list.items]]
+        details = "Design of CI/CD utilising GitHub Actions"
+        [[params.experience.list.items]]
+        details = "Kubernetes management"
+        [[params.experience.list.items]]
+        details = "Developer tooling"
+
         [[params.experience.list]]
         title = "Staff Platform Engineer"
-        dates = "July 2021 - Present"
+        dates = "July 2021 - July 2022"
         company = "Fnality International"
         url = "https://www.fnality.org"
         details = "Building a blockchain technology platform to allow peer to peer digital cash asset to settle tokenised transations."
@@ -140,6 +153,8 @@ googleAnalytics = "UA-39926379-1"
         details = "Security Auditing"
         [[params.experience.list.items]]
         details = "Management of Kubernetes clusters"
+        [[params.experience.list.items]]
+        details = "Design of automated PKI system"
         
 
         [[params.experience.list]]
