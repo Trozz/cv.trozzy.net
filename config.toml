@@ -132,7 +132,7 @@ googleAnalytics = "UA-39926379-1"
 
         [[params.experience.list]]
         title = "Senior DevOps Engineer"
-        dates = "July 2022 - Present"
+        dates = "July 2022 - April 2023"
         company = "Kennek"
         url = "https://www.kennek.io"
         details = "Kennek provides SaaS solutions to enable lenders, investors and other alternative lending actors to scale operations, enhance risk management and identify new funding sources without the traditional burdens"
