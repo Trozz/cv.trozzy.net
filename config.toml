@@ -7,7 +7,6 @@ theme = "hugo-devresume-theme"
 googleAnalytics = "UA-39926379-1"
 
 [params]
-
     author = "Michael Leer-Hipple"
     description = "Experienced DevOps & Reliability Engineer"
 
